@@ -191,17 +191,17 @@ int main() {
 
 ### Executando no NetBeans
 
-1. Clique com o botão direito no projeto `COMPILADORESPJ` > **Propriedades**.
-2. Vá em **Executar** > no campo **Argumentos**, insira:
+1. Clique com o botão direito no projeto `COMPILADORESPJ` > **Properties**.
+2. Vá em **Run** > no campo **Arguments**, insira:
 
    ```
    caminho/entrada.cod saida.cpp
    ```
 
-   Exemplo (maneira que utilizamos):
+   Exemplo (jeito que fizemos no projeto):
 
    ```
-   src/compiladorespj/exemplo1.cod exemplo_saida.cpp
+   src/compiladorespj/exemplo1.cod exemplo.cpp
    ```
 3. Clique em **OK**.
 4. Primeiro **Clean and Build** o projeto.
@@ -209,11 +209,10 @@ int main() {
 
    * Botão verde ▶️
    * Ou `F6`
-   * Ou clique direito > **Executar**
 
 <br>
 
 ## 👩‍💻 **Autores**
 
-* Anna Carolina Ribeiro Pires Zomer – RA: 22.224.017-8
-* Humberto de Oliveira Pellegrini – RA: 22.224.019-4
+| Anna Carolina Zomer ⬇️ <br><br> [![GitHub](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/z0mer) | Humberto Pellegrini ⬇️ <br><br> [![GitHub](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/Humbertin07) |
+|-------------------|--------------------|
