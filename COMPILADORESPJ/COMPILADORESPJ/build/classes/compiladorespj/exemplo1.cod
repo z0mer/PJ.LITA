@@ -1,0 +1,30 @@
+programma primo_verifier
+
+  var numero: intero.
+  var eh_primo: booleano assegna vero.
+  var i: intero assegna 2.
+
+  scrivi("Digite um numero:").
+  leggi(numero).
+
+  se (numero minoreuguale 1) allora
+    eh_primo assegna falso.
+  altrimenti
+    mentre (i minoreuguale (numero diviso 2)) fai
+      se (numero % i uguale 0) allora
+        eh_primo assegna falso.
+        interrompi.
+      fine se
+      i assegna i piu 1.
+    fine mentre
+  fine se
+
+  se (eh_primo) allora
+    scrivi(numero, " è primo!").
+  altrimenti
+    scrivi(numero, " não é primo!").
+  fine se
+
+fineprog
+
+
