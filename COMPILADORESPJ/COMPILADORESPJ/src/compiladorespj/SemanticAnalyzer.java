@@ -14,6 +14,16 @@ public class SemanticAnalyzer {
             return;
         }
         visitBlock(p.block);
+
+        System.out.println("--- Tabela de Simbolos (Apos Analise Semantica) ---");
+        if (symtab.isEmpty()) {
+            System.out.println("Tabela de simbolos vazia.");
+        } else {
+            for (Map.Entry<String, String> entry : symtab.entrySet()) {
+                System.out.println("ID: " + entry.getKey() + ", Tipo: " + entry.getValue());
+            }
+        }
+        System.out.println("----------------------------------------------------");
     }
 
     private void visitBlock(Block b) {
