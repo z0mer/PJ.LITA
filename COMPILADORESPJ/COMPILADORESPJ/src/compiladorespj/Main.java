@@ -23,17 +23,22 @@ public class Main {
             System.out.println("Iniciando Analise Lexica...");
             Lexer lexer = new Lexer(sourceCode);
             List<Token> tokens = lexer.tokenize();
-            System.out.println("Analise Lexica concluida.");
+            System.out.println("Analise Lexica concluida.\n");
 
+            System.out.println("Tokens:");
+            for (Token token : tokens) {
+                System.out.println(token);
+            }
+            
             System.out.println("Iniciando Analise Sintatica...");
             Parser parser = new Parser(tokens);
             AST.Program programAst = parser.parseProgram(); 
-            System.out.println("Analise Sintatica concluida.");
+            System.out.println("Analise Sintatica concluida.\n");
 
             System.out.println("Iniciando Analise Semantica...");
             SemanticAnalyzer semanticAnalyzer = new SemanticAnalyzer();
             semanticAnalyzer.analyze(programAst); 
-            System.out.println("Analise Semantica concluida.");
+            System.out.println("Analise Semantica concluida.\n");
 
             System.out.println("Iniciando Geracao de Codigo C++...");
             CodeGenerator codeGenerator = new CodeGenerator();
